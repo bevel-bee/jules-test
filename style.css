@@ -1,132 +1,103 @@
-/* Dark Theme inspired by Gumroad */
-
-/* Font is imported in the HTML head for performance */
-
-:root {
-    --background-color: #111111;
-    --card-color: #222222;
-    --text-color: #eeeeee;
-    --primary-color: #9f7aea; /* A nice purple accent */
-    --border-color: #333333;
-    --shadow-color: rgba(0, 0, 0, 0.2);
-}
-
-/* General Body Styles */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background-color);
-    background-image:
-        radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 30%),
-        linear-gradient(45deg, rgba(255,255,255,0.01) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.01) 75%, rgba(255,255,255,0.01));
-    background-size: 100% 100%, 2px 2px;
-    color: var(--text-color);
+    font-family: sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
-/* Header Styles */
 header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-/* Main Content Container */
 main {
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 1rem;
+    margin: 0 2rem;
+    background: #fff;
+    border-radius: 5px;
 }
 
-/* Link Styles */
-a {
-    color: var(--primary-color);
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: #333;
+    background: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: block;
+    border: 1px solid #ddd;
 }
 
-a:hover {
+nav ul li a:hover {
+    background: #333;
     color: #fff;
 }
 
-/* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: var(--card-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 th, td {
-    padding: 12px 15px;
+    padding: 12px;
     text-align: left;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #ddd;
 }
 
 th {
     background-color: #333;
-    font-weight: 700;
+    color: white;
 }
 
-tr:last-child td {
-    border-bottom: none;
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
-    color: #888;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background: #333;
+    color: #fff;
 }
 
-/* Horizontal Rule */
+a {
+    color: #3366cc;
+}
+
+a:hover {
+    color: #1a4488;
+}
+
+/* Add a bit more spacing and a subtle style to the horizontal rule */
 hr {
     border: 0;
     height: 1px;
-    background: var(--border-color);
+    background: #ddd;
     margin: 2rem 0;
 }
 
-/* Card Layout */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin-top: 2rem;
+/* Style for the example dialogue */
+.dialogue {
+    background: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
-.card {
-    background-color: var(--card-color);
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px var(--shadow-color);
-}
-
-.card a {
-    display: block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-.card a:hover {
-    color: var(--primary-color);
+.dialogue p {
+    margin: 0.5rem 0;
 }
