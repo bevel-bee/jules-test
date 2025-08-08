@@ -130,3 +130,55 @@ hr {
 .card a:hover {
     color: var(--primary-color);
 }
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7b5cbd; /* A slightly darker purple */
+    color: #fff;
+}
+
+/* Curriculum Navigation */
+.curriculum-nav .topic-list {
+    list-style: none;
+    padding: 0;
+}
+
+.curriculum-nav .topic-list h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.curriculum-nav .topic-list ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.curriculum-nav .topic-list ul li {
+    margin-bottom: 0.75rem;
+}
+
+.curriculum-nav .topic-list ul li a {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.curriculum-nav .topic-list ul li a:hover {
+    color: var(--primary-color);
+}
