@@ -81,3 +81,23 @@ a {
 a:hover {
     color: #1a4488;
 }
+
+/* Add a bit more spacing and a subtle style to the horizontal rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+}
+
+/* Style for the example dialogue */
+.dialogue {
+    background: #f9f9f9;
+    border-left: 4px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.dialogue p {
+    margin: 0.5rem 0;
+}
